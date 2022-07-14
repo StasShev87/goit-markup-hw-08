@@ -43,3 +43,19 @@ nav a:focus {
 .contacts a:focus {
     color: #2196F3;
 }
+
+/* Hero styles */
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    color: #ffffff;
+}
+
+.button
+{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
