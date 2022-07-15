@@ -19,6 +19,7 @@
     --accent-color: #2196f3;
     --title-color: #212121;
     --title-inverse-color: #fff;
+    --team-section-background-color: #f5f4fa;
     --footer-background-color: #2f303a;
     --footer-contacts-color: rgb(255 255 255 / .6);
 }
@@ -28,8 +29,14 @@ body {
     color: var(--main-text-color);
 }
 
+/* Auxiliary styles */
+
 .link {
     text-decoration: none;
+}
+
+.list {
+    list-style: none;
 }
 
 /* Header styles */
@@ -84,4 +91,34 @@ nav .link:focus {
 {
     color: var(--title-inverse-color);
     background-color: var(--accent-color);
+}
+
+/* Section styles */
+
+section .title {
+    color: var(--title-color);
+}
+
+/* Features section styles */
+
+.features-section {
+    
+}
+
+/* What we do section styles */
+
+.what-we-do-section {
+   
+}
+
+/* Team section styles */
+
+.team-section {
+    background-color: var(--team-section-background-color);
+}
+
+/* Footer styles */
+
+footer {
+    background-color: var(--footer-background-color);
 }
