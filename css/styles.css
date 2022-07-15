@@ -46,8 +46,13 @@ header {
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
     color: var(--logo-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 .logo .accent {
@@ -56,6 +61,11 @@ header {
 
 nav .link {
     color: var(--title-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 nav .current {
@@ -70,6 +80,11 @@ nav .link:focus {
 .contacts .link
 {
     color: var(--main-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .contacts .link:hover,
