@@ -1,61 +1,87 @@
-* {    
-    font-family: 'Roboto', sans-serif;
+/* Color palette */
+/* header backgroupnd  #fff */
+/* Hero background #2F303A */
+/* What we do background #E5E5E5 */
+/* Out team background #F5F4FA */
+/* Footer background #2F303A */
+
+/* Accent color #2196F3 */
+/* logo color #000 */
+/* Header nav link color #212121 */
+/* Header contacts color #757575 */
+/* Hero text color #fff */
+/* Footer contacts color rgba(255, 255, 255, 0.6) */
+
+:root {
+    --main-background-color: #e5e5e5;
+    --main-text-color: #757575;
+    --logo-color: #000;
+    --accent-color: #2196f3;
+    --header-color: #212121;
+    --header-inverse-color: #fff;
+    --footer-background-color: #2f303a;
+    --footer-contacts-color: rgb(255 255 255 / .6);
 }
 
-a {
+body {    
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+}
+
+.link {
     text-decoration: none;
 }
 
 /* Header styles */
 
 header {
-    background-color: #ffffff;
+    background-color: var(--header-inverse-color);
 }
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    color: #000000;
+    color: var(--logo-color);
 }
 
 .logo .accent {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-nav a {
-    color: #212121;
+nav .link {
+    color: var(--header-color);
 }
 
 nav .current {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-nav a:hover,
-nav a:focus {
-    color: #2196F3;
+nav .link:hover,
+nav .link:focus {
+    color: var(--accent-color);
 }
 
-.contacts a
+.contacts .link
 {
-    color: #757575;
+    color: var(--main-text-color);
 }
 
-.contacts a:hover,
-.contacts a:focus {
-    color: #2196F3;
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
 }
 
 /* Hero styles */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--footer-background-color);
 }
 
 .hero-title {
-    color: #ffffff;
+    color: var(--header-inverse-color);
 }
 
 .button
 {
-    background-color: #2196F3;
-    color: #FFFFFF;
+    color: var(--header-inverse-color);
+    background-color: var(--accent-color);
 }
