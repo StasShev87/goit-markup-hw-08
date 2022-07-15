@@ -122,3 +122,8 @@ section .title {
 footer {
     background-color: var(--footer-background-color);
 }
+
+.logo.footer {
+    color: var(--title-inverse-color)
+}
+
