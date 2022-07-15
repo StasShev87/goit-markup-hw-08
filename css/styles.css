@@ -17,8 +17,8 @@
     --main-text-color: #757575;
     --logo-color: #000;
     --accent-color: #2196f3;
-    --header-color: #212121;
-    --header-inverse-color: #fff;
+    --title-color: #212121;
+    --title-inverse-color: #fff;
     --footer-background-color: #2f303a;
     --footer-contacts-color: rgb(255 255 255 / .6);
 }
@@ -35,7 +35,7 @@ body {
 /* Header styles */
 
 header {
-    background-color: var(--header-inverse-color);
+    background-color: var(--title-inverse-color);
 }
 
 .logo {
@@ -48,7 +48,7 @@ header {
 }
 
 nav .link {
-    color: var(--header-color);
+    color: var(--title-color);
 }
 
 nav .current {
@@ -77,11 +77,11 @@ nav .link:focus {
 }
 
 .hero-title {
-    color: var(--header-inverse-color);
+    color: var(--title-inverse-color);
 }
 
 .button
 {
-    color: var(--header-inverse-color);
+    color: var(--title-inverse-color);
     background-color: var(--accent-color);
 }
