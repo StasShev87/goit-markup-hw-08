@@ -127,10 +127,10 @@ footer .logo {
     color: var(--title-inverse-color)
 }
 
-footer .physical-address {
-    color: var(--title-inverse-color)
+.footer-contacts .link {
+    color: var(--footer-contacts-color);
 }
 
-footer .contact {
-    color: var(--footer-contacts-color);
+.footer-contacts .physical-address {
+    color: var(--title-inverse-color)
 }
