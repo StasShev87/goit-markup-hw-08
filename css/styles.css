@@ -111,14 +111,27 @@ nav .link:focus {
 /* Section styles */
 
 section .title {
-    /* color: var(--title-color); */
-    color: teal;
+    color: var(--title-color);
 }
 
 /* Features section styles */
 
-.features-section {
-    color: tomato;
+/* Hide the features section title */
+.features-section > .title {
+    opacity: 0;
+}
+
+.features-list .title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features-list {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 /* What we do section styles */
