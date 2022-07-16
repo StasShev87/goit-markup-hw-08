@@ -209,6 +209,8 @@ footer {
   opacity: 0;
 }
 
+/* Filter styles */
+
 .filter-item-button {
   color: var(--title-color);
   background-color: var(--team-section-background-color);
@@ -229,4 +231,21 @@ footer {
 .filter-item-button.current {
   color: var(--title-inverse-color);
   background-color: var(--accent-color);
+}
+
+/* Examples styles */
+
+.examples-item-title {
+  color: var(--title-color);
+  /* font-weight: 700; taken from browser <h2> */
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-item-category {
+  /* font-weight: 400; taken from browser <p> */
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
