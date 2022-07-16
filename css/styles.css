@@ -13,7 +13,7 @@
 /* Footer contacts color rgba(255, 255, 255, 0.6) */
 
 :root {
-  --main-background-color: #e5e5e5;
+  --main-background-color: #fff;
   --main-text-color: #757575;
   --logo-dark-color: #000;
   --logo-light-color: #fff;
@@ -42,10 +42,6 @@ body {
 }
 
 /* Header styles */
-
-header {
-  background-color: var(--title-inverse-color);
-}
 
 .logo {
   color: var(--accent-color);
