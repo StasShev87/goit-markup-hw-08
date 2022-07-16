@@ -127,7 +127,7 @@ nav .link:focus {
 
 /* Section styles */
 
-section .title {
+.section .title {
   color: var(--title-color);
   /* font-weight: 700;  taken from browser */
   font-size: 36px;
@@ -144,6 +144,7 @@ section .title {
 }
 
 .features-list .title {
+  /* font-weight: 700;  taken from browser */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
