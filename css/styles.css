@@ -13,169 +13,171 @@
 /* Footer contacts color rgba(255, 255, 255, 0.6) */
 
 :root {
-    --main-background-color: #e5e5e5;
-    --main-text-color: #757575;
-    --logo-color: #000;
-    --accent-color: #2196f3;
-    --title-color: #212121;
-    --title-inverse-color: #fff;
-    --team-section-background-color: #f5f4fa;
-    --footer-background-color: #2f303a;
-    --footer-contacts-color: rgb(255 255 255 / .6);
+  --main-background-color: #e5e5e5;
+  --main-text-color: #757575;
+  --logo-color: #000;
+  --accent-color: #2196f3;
+  --title-color: #212121;
+  --title-inverse-color: #fff;
+  --team-section-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --footer-contacts-color: rgb(255 255 255 / 0.6);
 }
 
-body {    
-    font-family: 'Roboto', sans-serif;
-    color: var(--main-text-color);
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
 }
 
 /* Auxiliary styles */
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 /* Header styles */
 
 header {
-    background-color: var(--title-inverse-color);
+  background-color: var(--title-inverse-color);
 }
 
 .logo {
-    color: var(--logo-color);
+  color: var(--logo-color);
 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo .accent {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 nav .link {
-    color: var(--title-color);
+  color: var(--title-color);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 nav .current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 nav .link:hover,
 nav .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-.contacts .link
-{
-    color: var(--main-text-color);
+.contacts .link {
+  color: var(--main-text-color);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Hero styles */
 
 .hero {
-    background-color: var(--footer-background-color);
+  background-color: var(--footer-background-color);
 }
 
 .hero-title {
-    color: var(--title-inverse-color);
+  color: var(--title-inverse-color);
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.hero button
-{
-    color: var(--title-inverse-color);
-    background-color: var(--accent-color);
-    
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
+.hero button {
+  color: var(--title-inverse-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* Section styles */
 
 section .title {
-    color: var(--title-color);
+  color: var(--title-color);
+  /* font-weight: 700;  taken from browser */
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Features section styles */
 
 /* Hide the features section title */
 .features-section > .title {
-    opacity: 0;
+  opacity: 0;
 }
 
 .features-list .title {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .features-list {
-    /* Probably the font-weight: 400 is set by browser. Should have I set it manually? */
-    /* font-weight: 400; */
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  /* TODO: Probably the font-weight: 400 is set by browser. Should have I set it manually? */
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* What we do section styles */
 
 .what-we-do-section {
-   
 }
 
 /* Team section styles */
 
 .team-section {
-    background-color: var(--team-section-background-color);
+  background-color: var(--team-section-background-color);
 }
 
 /* Footer styles */
 
 footer {
-    background-color: var(--footer-background-color);
+  background-color: var(--footer-background-color);
 }
 
 footer .logo {
-    color: var(--title-inverse-color)
+  color: var(--title-inverse-color);
 }
 
 .footer-contacts .link {
-    color: var(--footer-contacts-color);
+  color: var(--footer-contacts-color);
 }
 
 .footer-contacts .physical-address {
-    color: var(--title-inverse-color)
+  color: var(--title-inverse-color);
 }
