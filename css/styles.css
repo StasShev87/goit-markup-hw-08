@@ -111,13 +111,14 @@ nav .link:focus {
 /* Section styles */
 
 section .title {
-    color: var(--title-color);
+    /* color: var(--title-color); */
+    color: teal;
 }
 
 /* Features section styles */
 
 .features-section {
-    
+    color: tomato;
 }
 
 /* What we do section styles */
