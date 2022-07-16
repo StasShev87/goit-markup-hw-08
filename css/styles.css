@@ -121,7 +121,6 @@ nav .link:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
@@ -208,4 +207,26 @@ footer {
 /* Hide the portfolio section title */
 .portfolio-section > .section-title {
   opacity: 0;
+}
+
+.filter-item-button {
+  color: var(--title-color);
+  background-color: var(--team-section-background-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.filter-item-button:hover,
+.filter-item-button:focus {
+  color: var(--title-inverse-color);
+  background-color: var(--accent-color);
+}
+
+.filter-item-button.current {
+  color: var(--title-inverse-color);
+  background-color: var(--accent-color);
 }
