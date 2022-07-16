@@ -143,6 +143,8 @@ section .title {
 }
 
 .features-list {
+    /* Probably the font-weight: 400 is set by browser. Should have I set it manually? */
+    /* font-weight: 400; */
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
