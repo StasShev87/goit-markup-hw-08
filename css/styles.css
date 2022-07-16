@@ -201,3 +201,11 @@ footer {
 .footer-contacts .physical-address {
   color: var(--title-inverse-color);
 }
+
+/* Portfolio page styles */
+/* Portfolio section styles */
+
+/* Hide the portfolio section title */
+.portfolio-section > .section-title {
+  opacity: 0;
+}
