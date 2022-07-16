@@ -15,7 +15,8 @@
 :root {
   --main-background-color: #e5e5e5;
   --main-text-color: #757575;
-  --logo-color: #000;
+  --logo-dark-color: #000;
+  --logo-light-color: #fff;
   --accent-color: #2196f3;
   --title-color: #212121;
   --title-inverse-color: #fff;
@@ -46,7 +47,7 @@ header {
 }
 
 .logo {
-  color: var(--logo-color);
+  color: var(--accent-color);
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -55,8 +56,12 @@ header {
   letter-spacing: 0.03em;
 }
 
-.logo .accent {
-  color: var(--accent-color);
+.logo-dark {
+  color: var(--logo-dark-color);
+}
+
+.logo-light {
+  color: var(--logo-light-color);
 }
 
 nav .link {
@@ -168,10 +173,6 @@ section .title {
 
 footer {
   background-color: var(--footer-background-color);
-}
-
-footer .logo {
-  color: var(--title-inverse-color);
 }
 
 .footer-contacts .link {
