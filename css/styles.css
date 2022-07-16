@@ -61,7 +61,7 @@ body {
   color: var(--logo-light-color);
 }
 
-nav .link {
+.site-nav .link {
   color: var(--title-color);
 
   font-weight: 500;
@@ -70,12 +70,12 @@ nav .link {
   letter-spacing: 0.02em;
 }
 
-nav .current {
+.site-nav .current {
   color: var(--accent-color);
 }
 
-nav .link:hover,
-nav .link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
