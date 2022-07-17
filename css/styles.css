@@ -110,7 +110,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero button {
+.hero-button {
   color: var(--title-inverse-color);
   background-color: var(--accent-color);
 
