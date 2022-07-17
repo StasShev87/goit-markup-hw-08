@@ -61,7 +61,7 @@ body {
   color: var(--logo-light-color);
 }
 
-.site-nav .link {
+.site-nav-link {
   color: var(--title-color);
 
   font-weight: 500;
@@ -70,16 +70,16 @@ body {
   letter-spacing: 0.02em;
 }
 
-.site-nav .current {
+.site-nav-link.current {
   color: var(--accent-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
 }
 
-.contacts .link {
+.contacts-link {
   color: var(--main-text-color);
 
   font-weight: 500;
@@ -88,8 +88,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
