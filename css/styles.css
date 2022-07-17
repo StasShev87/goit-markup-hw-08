@@ -137,8 +137,8 @@ body {
 /* Features section styles */
 
 /* Hide the features section title */
-.features-section > .section-title {
-  opacity: 0;
+.features-section-title {
+  display: none;
 }
 
 .features-item-title {
@@ -209,8 +209,8 @@ body {
 /* Portfolio section styles */
 
 /* Hide the portfolio section title */
-.portfolio-section > .section-title {
-  opacity: 0;
+.portfolio-section-title {
+  display: none;
 }
 
 /* Filter styles */
