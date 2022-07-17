@@ -191,11 +191,17 @@ body {
   background-color: var(--footer-background-color);
 }
 
-.footer-contacts .link {
+.footer-contacts-link {
   color: var(--footer-contacts-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.footer-contacts .physical-address {
+.footer-contacts-link.physical-address {
   color: var(--title-inverse-color);
 }
 
