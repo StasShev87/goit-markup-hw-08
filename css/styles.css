@@ -191,9 +191,7 @@ body {
   background-color: var(--footer-background-color);
 }
 
-.footer-contacts-link {
-  color: var(--footer-contacts-color);
-
+.footer-address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -201,7 +199,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.footer-contacts-link.physical-address {
+.footer-address-link {
+  color: var(--footer-contacts-color);
+}
+
+.footer-address-link.physical-address {
   color: var(--title-inverse-color);
 }
 
