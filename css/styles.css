@@ -193,7 +193,7 @@ body {
 
 .footer-address {
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; taken from browser <a> */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
