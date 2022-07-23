@@ -58,6 +58,19 @@ body {
   outline-color: purple;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* ---------------------- Header styles ---------------------- */
 
 .header {
@@ -204,11 +217,6 @@ body {
 
 /* ---------------------- Features section styles ---------------------- */
 
-/* Hide the features section title */
-.features-section-title {
-  display: none;
-}
-
 .features-item-title {
   color: var(--title-color);
   /* font-weight: 700;  taken from browser <h3> */
@@ -277,11 +285,6 @@ body {
 
 /* ---------------------- Portfolio page styles ---------------------- */
 /* ---------------------- Portfolio section styles ---------------------- */
-
-/* Hide the portfolio section title */
-.portfolio-section-title {
-  display: none;
-}
 
 /* Filter styles */
 
