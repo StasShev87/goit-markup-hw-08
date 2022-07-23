@@ -150,12 +150,18 @@ body {
 /* ---------------------- Hero styles ---------------------- */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--footer-background-color);
+  text-align: center;
 }
 
 .hero-title {
-  color: var(--title-inverse-color);
+  margin-top: 0;
+  margin-bottom: 30px;
 
+  color: var(--title-inverse-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -165,9 +171,12 @@ body {
 }
 
 .hero-button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: transparent;
+
   color: var(--title-inverse-color);
   background-color: var(--accent-color);
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
