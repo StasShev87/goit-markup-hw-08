@@ -133,6 +133,11 @@ body {
 
 /* Section styles */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: var(--title-color);
   /* font-weight: 700;  taken from browser <h2> */
