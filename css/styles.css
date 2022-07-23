@@ -81,9 +81,6 @@ body {
 /* Logo styles */
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -98,6 +95,12 @@ body {
 
 .logo-light {
   color: var(--logo-light-color);
+}
+
+.header-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* Site navigation styles */
@@ -322,7 +325,15 @@ body {
 /* ---------------------- Footer styles ---------------------- */
 
 .footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-background-color);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -333,12 +344,23 @@ body {
   letter-spacing: 0.03em;
 }
 
+.footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-address-link {
   color: var(--footer-contacts-color);
 }
 
 .footer-address-link.physical-address {
   color: var(--title-inverse-color);
+}
+
+/* To override .footer-address-link.physical-address
+this rule must be lower */
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--accent-color);
 }
 
 /* ---------------------- Portfolio page styles ---------------------- */
