@@ -207,6 +207,9 @@ body {
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-color);
   /* font-weight: 700;  taken from browser <h2> */
   font-size: 36px;
@@ -217,7 +220,18 @@ body {
 
 /* ---------------------- Features section styles ---------------------- */
 
+.features-list {
+  display: flex;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-color);
   /* font-weight: 700;  taken from browser <h3> */
   font-size: 14px;
@@ -227,6 +241,9 @@ body {
 }
 
 .features-item-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
   /* font-weight: 400; taken from browser <p> */
   font-size: 14px;
   line-height: 1.71;
@@ -236,6 +253,21 @@ body {
 /* ---------------------- What we do section styles ---------------------- */
 
 .what-we-do-section {
+  padding-top: 0;
+}
+
+.what-we-do-list {
+  display: flex;
+  /* TODO: */
+  /* justify-content: center; */
+}
+
+.what-we-do-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-we-do-list-item img {
+  display: block;
 }
 
 /* ---------------------- Team section styles ---------------------- */
