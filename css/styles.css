@@ -23,6 +23,8 @@
   --team-section-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --footer-contacts-color: rgb(255 255 255 / 0.6);
+
+  --examples-item-margin: 30px;
 }
 
 body {
@@ -408,31 +410,25 @@ this rule must be lower */
 .examples-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: calc(-1 * var(--examples-item-margin));
+  margin-top: calc(-1 * var(--examples-item-margin));
 }
 
-/* Grid layout start */
 .examples-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-left: var(--examples-item-margin);
+  margin-top: var(--examples-item-margin);
+  flex-basis: calc(100% / 3 - var(--examples-item-margin));
 }
 
-.examples-item:nth-child(3n) {
-  margin-right: 0;
+.examples-item-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
-.examples-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-/* Grid layout end */
 
 .examples-item-footer {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-}
-
-.examples-item > img {
-  display: block;
 }
 
 .examples-item-title {
