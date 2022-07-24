@@ -54,9 +54,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline-color: violet;
-  outline-style: dashed;
 }
 
 .visually-hidden {
