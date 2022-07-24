@@ -28,8 +28,10 @@
 }
 
 body {
+  /* Box model */
   margin: 0;
 
+  /* Typography */
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
@@ -38,17 +40,21 @@ body {
 /* ---------------------- Auxiliary styles ---------------------- */
 
 .link {
+  /* Typography */
   text-decoration: none;
 }
 
 .list {
-  list-style: none;
+  /* Box model */
+  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  /* Visual */
+  list-style: none;
 }
 
 .container {
+  /* Box model */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -72,10 +78,12 @@ body {
 /* ---------------------- Header styles ---------------------- */
 
 .header {
+  /* Visual */
   border-bottom: 1px solid #ececec;
 }
 
 .header-container {
+  /* Box model */
   display: flex;
   align-items: center;
 }
@@ -83,6 +91,7 @@ body {
 /* Logo styles */
 
 .logo {
+  /* Typography */
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -92,14 +101,17 @@ body {
 }
 
 .logo-dark {
+  /* Typography */
   color: var(--logo-dark-color);
 }
 
 .logo-light {
+  /* Typography */
   color: var(--logo-light-color);
 }
 
 .header-logo {
+  /* Box model */
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -108,22 +120,27 @@ body {
 /* Site navigation styles */
 
 .site-nav {
+  /* Box model */
   margin-left: 93px;
 }
 
 .site-nav-list {
+  /* Box model */
   display: flex;
 }
 
 .site-nav-item:not(:last-child) {
+  /* Box model */
   margin-right: 50px;
 }
 
 .site-nav-link {
+  /* Box model */
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
+  /* Typography */
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -132,28 +149,32 @@ body {
 }
 
 .site-nav-link.current {
+  /* Typography */
   color: var(--accent-color);
 }
 
 .site-nav-link:hover,
 .site-nav-link:focus {
+  /* Typography */
   color: var(--accent-color);
 }
 
 /* Header contacts styles */
 
 .header-contacts {
+  /* Box model */
   display: flex;
   margin-left: auto;
 }
 
 .header-contacts-item:not(:last-child) {
+  /* Box model */
   margin-right: 50px;
 }
 
 .contacts-link {
+  /* Typography */
   color: var(--main-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -162,23 +183,30 @@ body {
 
 .contacts-link:hover,
 .contacts-link:focus {
+  /* Typography */
   color: var(--accent-color);
 }
 
 /* ---------------------- Hero styles ---------------------- */
 
 .hero {
+  /* Box model */
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--footer-background-color);
+  /* Typography */
   text-align: center;
+
+  /* Visual */
+  background-color: var(--footer-background-color);
 }
 
 .hero-title {
+  /* Box model */
   margin-top: 0;
   margin-bottom: 30px;
 
+  /* Typography */
   color: var(--title-inverse-color);
   font-weight: 900;
   font-size: 44px;
@@ -189,32 +217,40 @@ body {
 }
 
 .hero-button {
+  /* Box model */
   padding: 10px 32px;
-  border-radius: 4px;
-  border-color: transparent;
 
+  /* Typography */
   color: var(--title-inverse-color);
-  background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
+  /* Visual */
+  background-color: var(--accent-color);
+  border-color: transparent;
+  border-radius: 4px;
+
+  /* Misc */
   cursor: pointer;
 }
 
 /* ---------------------- Section styles ---------------------- */
 
 .section {
+  /* Box model */
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .section-title {
+  /* Box model */
   margin-top: 0;
   margin-bottom: 50px;
 
+  /* Typography */
   color: var(--title-color);
   /* font-weight: 700;  taken from browser <h2> */
   font-size: 36px;
@@ -226,17 +262,21 @@ body {
 /* ---------------------- Features section styles ---------------------- */
 
 .features-list {
+  /* Box model */
   display: flex;
 }
 
 .features-item:not(:last-child) {
+  /* Box model */
   margin-right: 30px;
 }
 
 .features-item-title {
+  /* Box model */
   margin-top: 0;
   margin-bottom: 10px;
 
+  /* Typography */
   color: var(--title-color);
   /* font-weight: 700;  taken from browser <h3> */
   font-size: 14px;
@@ -246,9 +286,11 @@ body {
 }
 
 .features-item-description {
+  /* Box model */
   margin-top: 0;
   margin-bottom: 0;
 
+  /* Typography */
   /* font-weight: 400; taken from browser <p> */
   font-size: 14px;
   line-height: 1.71;
@@ -258,51 +300,63 @@ body {
 /* ---------------------- What we do section styles ---------------------- */
 
 .what-we-do-section {
+  /* Box model */
   padding-top: 0;
 }
 
 .what-we-do-list {
+  /* Box model */
   display: flex;
 }
 
 .what-we-do-list-item:not(:last-child) {
+  /* Box model */
   margin-right: 30px;
 }
 
 .what-we-do-list-item img {
+  /* Box model */
   display: block;
 }
 
 /* ---------------------- Team section styles ---------------------- */
 
 .team-section {
+  /* Visual */
   background-color: var(--team-section-background-color);
 }
 
 .team-list {
+  /* Box model */
   display: flex;
 }
 
 .team-list-item {
+  /* Box model */
   padding-bottom: 30px;
 
-  border-radius: 0px 0px 4px 4px;
+  /* Visual */
   background-color: var(--main-background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item:not(:last-child) {
+  /* Box model */
   margin-right: 30px;
 }
 
 .team-list-item img {
+  /* Box model */
   display: block;
   margin-bottom: 30px;
 }
 
 .team-item-title {
+  /* Box model */
   margin-top: 0;
   margin-bottom: 10px;
 
+  /* Typography */
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
@@ -312,9 +366,11 @@ body {
 }
 
 .team-item-text {
+  /* Box model */
   margin-top: 0;
   margin-bottom: 0;
 
+  /* Typography */
   /* font-weight: 400; taken from browser <p> */
   font-size: 16px;
   line-height: 1.19;
@@ -325,18 +381,22 @@ body {
 /* ---------------------- Footer styles ---------------------- */
 
 .footer-section {
+  /* Box model */
   padding-top: 60px;
   padding-bottom: 60px;
 
+  /* Visual */
   background-color: var(--footer-background-color);
 }
 
 .footer-logo {
+  /* Box model */
   display: block;
   margin-bottom: 20px;
 }
 
 .footer-address {
+  /* Typography */
   font-style: normal;
   /* font-weight: 400; taken from browser <a> */
   font-size: 14px;
@@ -345,14 +405,17 @@ body {
 }
 
 .footer-address-item:not(:last-child) {
+  /* Box model */
   margin-bottom: 9px;
 }
 
 .footer-address-link {
+  /* Typography */
   color: var(--footer-contacts-color);
 }
 
 .footer-address-link.physical-address {
+  /* Typography */
   color: var(--title-inverse-color);
 }
 
@@ -360,6 +423,7 @@ body {
 this rule must be lower */
 .footer-address-link:hover,
 .footer-address-link:focus {
+  /* Typography */
   color: var(--accent-color);
 }
 
@@ -369,42 +433,52 @@ this rule must be lower */
 /* Filter styles */
 
 .filter-list {
+  /* Box model */
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
+  /* Box model */
   margin-right: 8px;
 }
 
 .filter-item-button {
+  /* Box model */
   padding: 6px 22px;
 
-  border-radius: 4px;
-  border-color: transparent;
-
+  /* Typography */
   color: var(--title-color);
-  background-color: var(--team-section-background-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
 
+  /* Visual */
+  background-color: var(--team-section-background-color);
+  border-color: transparent;
+  border-radius: 4px;
+
+  /* Misc */
   cursor: pointer;
 }
 
 .filter-item-button:hover,
 .filter-item-button:focus,
 .filter-item-button.current {
+  /* Typography */
   color: var(--title-inverse-color);
+
+  /* Visual */
   background-color: var(--accent-color);
 }
 
 /* Examples styles */
 
 .examples-list {
+  /* Box model */
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--examples-item-margin));
@@ -412,26 +486,33 @@ this rule must be lower */
 }
 
 .examples-item {
+  /* Box model */
   margin-left: var(--examples-item-margin);
   margin-top: var(--examples-item-margin);
   flex-basis: calc(100% / 3 - var(--examples-item-margin));
 }
 
 .examples-item-img {
+  /* Box model */
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 .examples-item-footer {
+  /* Box model */
   padding: 20px 24px;
+
+  /* Visual */
   border: 1px solid #eeeeee;
 }
 
 .examples-item-title {
+  /* Box model */
   margin-top: 0;
   margin-bottom: 4px;
 
+  /* Typography */
   color: var(--title-color);
   /* font-weight: 700; taken from browser <h2> */
   font-size: 18px;
@@ -440,9 +521,11 @@ this rule must be lower */
 }
 
 .examples-item-category {
+  /* Box model */
   margin-top: 0;
   margin-bottom: 0;
 
+  /* Typography */
   /* font-weight: 400; taken from browser <p> */
   font-size: 16px;
   line-height: 1.88;
