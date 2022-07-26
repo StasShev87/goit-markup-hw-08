@@ -39,6 +39,12 @@ body {
   background-color: var(--main-background-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ---------------------- Auxiliary styles ---------------------- */
 
 .link {
@@ -316,11 +322,6 @@ body {
   margin-right: 30px;
 }
 
-.what-we-do-list-item img {
-  /* Box model */
-  display: block;
-}
-
 /* ---------------------- Team section styles ---------------------- */
 
 .team-section {
@@ -349,7 +350,6 @@ body {
 
 .team-list-item img {
   /* Box model */
-  display: block;
   margin-bottom: 30px;
 }
 
@@ -492,13 +492,6 @@ this rule must be lower */
   margin-left: var(--examples-item-margin);
   margin-top: var(--examples-item-margin);
   flex-basis: calc(100% / 3 - var(--examples-item-margin));
-}
-
-.examples-item-img {
-  /* Box model */
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .examples-item-footer {
