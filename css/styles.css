@@ -337,7 +337,6 @@ img {
 
 .team-list-item {
   /* Box model */
-  padding-bottom: 30px;
   flex-basis: calc(
     (100% - (var(--team-list-items-row-count) - 1) * var(--team-list-gap)) /
       var(--team-list-items-row-count)
@@ -348,9 +347,10 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item img {
+.team-item-footer {
   /* Box model */
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-item-title {
