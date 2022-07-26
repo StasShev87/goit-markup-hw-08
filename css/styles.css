@@ -24,6 +24,8 @@
   --footer-background-color: #2f303a;
   --footer-contacts-color: rgb(255 255 255 / 0.6);
 
+  --team-list-gap: 30px;
+  --team-list-items-row-count: 4;
   --examples-item-margin: 30px;
 }
 
@@ -329,20 +331,20 @@ body {
 .team-list {
   /* Box model */
   display: flex;
+  gap: var(--team-list-gap);
 }
 
 .team-list-item {
   /* Box model */
   padding-bottom: 30px;
+  flex-basis: calc(
+    (100% - (var(--team-list-items-row-count) - 1) * var(--team-list-gap)) /
+      var(--team-list-items-row-count)
+  );
 
   /* Visual */
   background-color: var(--main-background-color);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-list-item:not(:last-child) {
-  /* Box model */
-  margin-right: 30px;
 }
 
 .team-list-item img {
