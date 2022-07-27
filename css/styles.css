@@ -195,6 +195,30 @@ img {
   color: var(--accent-color);
 }
 
+.header .contacts-icon::before {
+  content: '';
+  /* Box model */
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.header .contacts-icon-mail::before {
+  /* TODO: */
+  /* Visual */
+  width: 16px;
+  height: 12px;
+  background-color: tomato;
+}
+
+.header .contacts-icon-phone::before {
+  /* TODO: */
+  /* Visual */
+  width: 10px;
+  height: 16px;
+  background-color: teal;
+}
+
 /* ---------------------- Hero styles ---------------------- */
 
 .hero {
