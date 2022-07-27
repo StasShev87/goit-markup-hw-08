@@ -310,6 +310,20 @@ img {
   margin-right: 30px;
 }
 
+/* TODO: */
+.features-item::before {
+  content: '';
+  /* Box model */
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  /* Visual */
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
 .features-item-title {
   /* Box model */
   margin-top: 0;
