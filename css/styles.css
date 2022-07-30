@@ -195,9 +195,10 @@ img {
   color: var(--accent-color);
 }
 
-.svg-icon {
+.header-contacts-icon {
   margin-right: 10px;
-  fill: red;
+  vertical-align: middle;
+  fill: currentColor;
 }
 
 /* ---------------------- Hero styles ---------------------- */
