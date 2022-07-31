@@ -21,11 +21,14 @@
   --title-color: #212121;
   --title-inverse-color: #fff;
   --team-section-background-color: #f5f4fa;
+  --team-section-social-color: #afb1b8;
   --footer-background-color: #2f303a;
   --footer-contacts-color: rgb(255 255 255 / 0.6);
 
   --team-list-gap: 30px;
   --team-list-items-row-count: 4;
+  --social-list-gap: 10px;
+  --social-list-row-items-count: 4;
   --examples-item-margin: 30px;
 }
 
@@ -329,8 +332,7 @@ img {
 }
 
 .team-item-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .team-item-title {
@@ -347,13 +349,48 @@ img {
 
 .team-item-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   /* font-weight: 400; taken from browser <p> */
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--social-list-gap);
+}
+
+.team-social-item {
+  flex-basis: calc(100% / var(--social-list-row-items-count) - var(--social-list-gap));
+}
+
+.team-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  padding: 12px;
+
+  color: var(--team-section-social-color);
+
+  border-radius: 50%;
+}
+
+.team-social-link:hover {
+  color: var(--title-inverse-color);
+  background-color: var(--accent-color);
+}
+
+.team-social-item-icon {
+  width: 100%;
+  height: 100%;
+
+  fill: currentColor;
 }
 
 /* ---------------------- Footer styles ---------------------- */
