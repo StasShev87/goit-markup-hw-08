@@ -28,6 +28,7 @@
   --team-list-gap: 30px;
   --team-list-items-row-count: 4;
   --social-list-gap: 10px;
+  --social-list-row-items-count: 4;
   --customers-list-gap: 30px;
   --customers-list-row-items-count: 6;
   --examples-item-margin: 30px;
@@ -366,6 +367,11 @@ img {
   gap: var(--social-list-gap);
 }
 
+.team-social-item {
+  flex-basis: calc(100% / var(--social-list-row-items-count) - var(--social-list-gap));
+  max-width: 44px;
+}
+
 .team-social-link {
   display: block;
   padding: 12px;
@@ -391,8 +397,13 @@ img {
 .customers-list {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: var(--customers-list-gap);
+}
+
+.customers-item {
+  flex-basis: calc(100% / var(--customers-list-row-items-count) - var(--customers-list-gap));
+  max-width: 170px;
 }
 
 .customers-link {
