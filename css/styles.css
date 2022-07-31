@@ -391,13 +391,13 @@ img {
 .customers-list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: var(--customers-list-gap);
 }
 
 .customers-link {
   display: block;
-  padding: 0 31px;
+  padding: 15px 31px;
 
   color: var(--team-section-social-color);
 
