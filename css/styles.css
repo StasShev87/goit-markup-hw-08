@@ -165,7 +165,10 @@ img {
   margin-right: 50px;
 }
 
-.contacts-link {
+.header-contacts-link {
+  display: flex;
+  align-items: center;
+
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -173,14 +176,13 @@ img {
   letter-spacing: 0.02em;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-color);
 }
 
 .header-contacts-icon {
   margin-right: 10px;
-  vertical-align: middle;
   fill: currentColor;
 }
 
@@ -262,16 +264,15 @@ img {
 }
 
 .features-item-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
 
   background: #f5f4fa;
   border-radius: 4px;
-}
-
-.features-item-icon {
 }
 
 .features-item-title {
@@ -390,19 +391,20 @@ img {
 
 .team-social-list {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: var(--social-list-gap);
 }
 
 .team-social-item {
-  flex-basis: calc(100% / var(--social-list-row-items-count) - var(--social-list-gap));
-  max-width: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .team-social-link {
-  display: block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 
   color: var(--team-section-social-color);
 
@@ -424,19 +426,20 @@ img {
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: var(--customers-list-gap);
 }
 
 .customers-item {
-  flex-basis: calc(100% / var(--customers-list-row-items-count) - var(--customers-list-gap));
-  max-width: 170px;
+  width: 170px;
+  height: 92px;
 }
 
 .customers-link {
-  display: block;
-  padding: 15px 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 
   color: var(--team-section-social-color);
 
@@ -467,6 +470,7 @@ img {
 .footer-wrap {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 /* ---------- Footer address ---------- */
@@ -505,10 +509,6 @@ this rule must be lower */
 
 /* ---------- Footer invitation ---------- */
 
-.footer-invitation {
-  padding-top: 12px;
-}
-
 .footer-invitation-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -526,9 +526,17 @@ this rule must be lower */
   gap: var(--social-list-gap);
 }
 
+.footer-invitation-social-item {
+  width: 44px;
+  height: 44px;
+}
+
 .footer-invitation-social-link {
-  display: block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 
   color: var(--title-inverse-color);
 
@@ -604,7 +612,12 @@ this rule must be lower */
   flex-basis: calc(100% / 3 - var(--examples-item-margin));
 }
 
-.examples-item:hover {
+.examples-item-link {
+  display: block;
+}
+
+.examples-item-link:hover,
+.examples-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
