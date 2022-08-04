@@ -351,11 +351,14 @@ img {
 }
 
 .what-we-do-item-overlay {
-  width: 100%;
-  padding: 27px;
-
   position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background: rgba(47, 48, 58, 0.8);
 }
@@ -618,7 +621,6 @@ this rule must be lower */
 
 .is-hidden {
   opacity: 0;
-  /* TODO: */
   visibility: hidden;
   pointer-events: none;
 }
@@ -661,6 +663,8 @@ this rule must be lower */
 
 .modal-btn-close-icon {
   fill: var(--modal-btn-close-color);
+
+  cursor: pointer;
 
   transition: fill var(--main-transition-duration) var(--main-transition-timing-function);
 }
@@ -804,4 +808,5 @@ this rule must be lower */
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
