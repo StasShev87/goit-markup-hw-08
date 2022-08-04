@@ -611,13 +611,15 @@ this rule must be lower */
 
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--main-transition-duration) var(--main-transition-timing-function);
+  visibility: visible;
+  transition: opacity var(--main-transition-duration) var(--main-transition-timing-function),
+    visibility var(--main-transition-duration) var(--main-transition-timing-function);
 }
 
 .is-hidden {
   opacity: 0;
   /* TODO: */
-  /* visibility: hidden; */
+  visibility: hidden;
   pointer-events: none;
 }
 
