@@ -470,7 +470,7 @@
           </div>
           <div class="subscription">
             <h2 class="subscription-title">Підпишіться на розсилку</h2>
-            <div class="subscription-form">
+            <form class="subscription-form">
               <input class="subscription-field-email" type="text" placeholder="E-mail" />
               <button class="subscription-btn common-blue-btn" type="submit">
                 Підписатися
@@ -478,20 +478,53 @@
                   <use href="./images/icons.svg#form-send"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </footer>
 
     <!-- Modal window -->
-    <div class="modal-backdrop is-hidden" data-modal>
+    <!-- TODO: is-hidden -->
+    <div class="modal-backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn-close" type="button" data-modal-close>
           <svg class="modal-btn-close-icon" width="18" height="18">
             <use href="./images/icons.svg#cross"></use>
           </svg>
         </button>
+        <form class="order-form">
+          <h2 class="order-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <div class="form-field">
+            <label class="text-field-label" for="username">Ім'я</label>
+            <input class="text-field-input" type="text" name="username" id="username" />
+          </div>
+
+          <div class="form-field">
+            <label class="text-field-label" for="phone">Телефон</label>
+            <input class="text-field-input" type="tel" name="phone" id="phone" />
+          </div>
+
+          <div class="form-field">
+            <label class="text-field-label" for="username">Пошта</label>
+            <input class="text-field-input" type="email" name="username" id="username" />
+          </div>
+
+          <div class="form-field">
+            <label class="text-field-label" for="comment">Коментар</label>
+            <textarea class="text-field-input" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+          </div>
+
+          <div class="policy-form-field form-field">
+            <input class="checkbox-input" type="checkbox" name="policy" id="policy" />
+            <label class="checkbox-label" for="policy"></label>
+              Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a>
+            </label>
+          </div>
+          <!-- TODO: type="submit" -->
+          <button class="order-form-btn common-blue-btn" type="button">Відправити</button>
+        </form>
       </div>
     </div>
 

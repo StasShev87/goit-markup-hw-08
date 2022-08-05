@@ -678,6 +678,8 @@ this rule must be lower */
   width: 528px;
   height: 581px;
 
+  padding: 40px;
+
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -722,6 +724,81 @@ this rule must be lower */
 
 .modal-btn-close:active .modal-btn-close-icon {
   fill: var(--modal-btn-close-color);
+}
+
+/* ----------- Modal window order form styles ----------- */
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-form-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.form-field {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.policy-form-field {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.text-field-label {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.text-field-input {
+  display: block;
+  width: 100%;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.text-field-input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.policy-link {
+  color: var(--accent-color);
+}
+
+.order-form-btn {
+  min-width: 200px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  overflow: hidden;
 }
 
 /* ---------------------- Portfolio page styles ---------------------- */
