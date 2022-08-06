@@ -18,6 +18,7 @@
   --logo-dark-color: #000;
   --logo-light-color: #fff;
   --accent-color: #2196f3;
+  --secondary-accent-color: #188ce8;
   --title-color: #212121;
   --title-inverse-color: #fff;
   --team-section-background-color: #f5f4fa;
@@ -265,7 +266,7 @@ img {
 .hero-button:focus,
 .common-blue-btn:hover,
 .common-blue-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--secondary-accent-color);
 }
 
 .hero-button:active,
@@ -789,6 +790,17 @@ this rule must be lower */
 }
 
 .policy-link {
+  color: var(--accent-color);
+}
+
+/* TODO: */
+.policy-link:hover,
+.policy-link:focus {
+  color: var(--secondary-accent-color);
+}
+
+/* TODO: */
+.policy-link:active {
   color: var(--accent-color);
 }
 
