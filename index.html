@@ -493,41 +493,47 @@
             <use href="./images/icons.svg#cross"></use>
           </svg>
         </button>
-        <form class="order-form">
-          <h2 class="order-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="order-form" name="order">
+          <h2 class="order-title">Залиште свої дані, ми вам передзвонимо</h2>
 
-          <div class="form-field">
-            <label class="text-field-label" for="username">Ім'я</label>
-            <input class="text-field-input" type="text" name="username" id="username" autofocus />
+          <div class="order-text-field">
+            <label class="order-text-field-label" for="username">Ім'я</label>
+            <input
+              class="order-text-field-input"
+              type="text"
+              name="username"
+              id="username"
+              autofocus
+            />
           </div>
 
-          <div class="form-field">
-            <label class="text-field-label" for="phone">Телефон</label>
-            <input class="text-field-input" type="tel" name="phone" id="phone" />
+          <div class="order-text-field">
+            <label class="order-text-field-label" for="phone">Телефон</label>
+            <input class="order-text-field-input" type="tel" name="phone" id="phone" />
           </div>
 
-          <div class="form-field">
-            <label class="text-field-label" for="username">Пошта</label>
-            <input class="text-field-input" type="email" name="username" id="username" />
+          <div class="order-text-field">
+            <label class="order-text-field-label" for="username">Пошта</label>
+            <input class="order-text-field-input" type="email" name="username" id="username" />
           </div>
 
-          <div class="form-field">
-            <label class="text-field-label" for="comment">Коментар</label>
+          <div class="comment-field order-text-field">
+            <label class="order-text-field-label" for="comment">Коментар</label>
             <textarea
-              class="text-field-input"
+              class="comment-input order-text-field-input"
               name="comment"
               id="comment"
               placeholder="Введіть текст"
             ></textarea>
           </div>
 
-          <div class="policy-form-field form-field">
-            <input class="checkbox-input" type="checkbox" name="policy" id="policy" />
-            <label class="checkbox-label" for="policy">
+          <div class="order-checkbox-field">
+            <input class="order-checkbox-field-input" type="checkbox" name="policy" id="policy" />
+            <label class="order-checkbox-field-label" for="policy">
               Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a>
             </label>
           </div>
-          <button class="order-form-btn common-blue-btn" type="submit">Відправити</button>
+          <button class="order-submit-btn common-blue-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
