@@ -787,6 +787,8 @@ this rule must be lower */
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border-color var(--main-transition-duration) var(--main-transition-timing-function);
 }
 
 .order-text-field-input::placeholder {
@@ -805,6 +807,7 @@ this rule must be lower */
   fill: var(--title-color);
 
   transform: translateY(-50%);
+  transition: fill var(--main-transition-duration) var(--main-transition-timing-function);
 }
 
 .order-text-field-input:focus + .order-text-field-icon {
@@ -892,15 +895,14 @@ this rule must be lower */
 
 .policy-link {
   color: var(--accent-color);
+  transition: color var(--main-transition-duration) var(--main-transition-timing-function);
 }
 
-/* TODO: */
 .policy-link:hover,
 .policy-link:focus {
   color: var(--secondary-accent-color);
 }
 
-/* TODO: */
 .policy-link:active {
   color: var(--accent-color);
 }
