@@ -838,9 +838,51 @@ this rule must be lower */
   margin-bottom: 30px;
 }
 
+/* Checkbox customization */
 .order-checkbox-field-input {
-  margin-right: 8px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
+/* Checkbox unchecked */
+.order-checkbox-field-input + .checkbox-custom {
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+
+  background-color: var(--main-background-color);
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 0px 2px var(--title-color);
+
+  transition: background-color var(--main-transition-duration)
+      var(--main-transition-timing-function),
+    box-shadow var(--main-transition-duration) var(--main-transition-timing-function);
+}
+
+/* Checkbox checked */
+.order-checkbox-field-input:checked + .checkbox-custom {
+  background-color: var(--accent-color);
+  box-shadow: inset 0px 0px 0px 0px var(--title-color);
+}
+
+/* Checkbox focused */
+.order-checkbox-field-input:focus + .checkbox-custom {
+  outline: var(--title-color) solid 2px;
+}
+
+/* End checkbox customization */
 
 .order-checkbox-field-label {
   font-size: 14px;
