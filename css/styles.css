@@ -522,6 +522,19 @@ img {
   align-items: baseline;
 }
 
+.footer-block-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--title-inverse-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* ---------- Footer address ---------- */
 
 .footer-logo {
@@ -559,19 +572,6 @@ this rule must be lower */
 }
 
 /* ---------- Footer invitation ---------- */
-
-.footer-invitation-title,
-.subscription-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-
-  color: var(--title-inverse-color);
-  /* font-weight: 700;  taken from browser <h2> */
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
 
 .footer-invitation-social-list {
   display: flex;
@@ -611,7 +611,7 @@ this rule must be lower */
 
 /* ---------- Footer subsribtion form ---------- */
 
-.subscription-form {
+.subscription-wrap {
   display: flex;
   align-items: center;
 }
@@ -639,10 +639,13 @@ this rule must be lower */
 }
 
 .subscription-btn {
-  display: flex;
-  align-items: center;
+  width: 200px;
+  height: 50px;
 
-  padding: 10px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
 }
 
 .subscription-btn-icon {
