@@ -88,6 +88,43 @@ img {
   margin: -1px;
 }
 
+.common-blue-btn {
+  height: 50px;
+  min-width: 200px;
+  max-width: 100%;
+  padding: 0 32px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--title-inverse-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+  transition: background-color var(--main-transition-duration)
+    var(--main-transition-timing-function);
+}
+
+.common-blue-btn:hover,
+.common-blue-btn:focus {
+  background-color: var(--secondary-accent-color);
+}
+
+.common-blue-btn:active {
+  background-color: var(--accent-color);
+}
+
 /* ---------------------- Header styles ---------------------- */
 
 .header {
@@ -241,37 +278,9 @@ img {
   text-transform: uppercase;
 }
 
-.hero-button,
-.common-blue-btn {
-  padding: 10px 32px;
-
-  color: var(--title-inverse-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  background-color: var(--accent-color);
-  border-color: transparent;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  cursor: pointer;
-  transition: background-color var(--main-transition-duration)
-    var(--main-transition-timing-function);
-}
-
-.hero-button:hover,
-.hero-button:focus,
-.common-blue-btn:hover,
-.common-blue-btn:focus {
-  background-color: var(--secondary-accent-color);
-}
-
-.hero-button:active,
-.common-blue-btn:active {
-  background-color: var(--accent-color);
+.hero-button {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* ---------------------- Section styles ---------------------- */
@@ -639,12 +648,6 @@ this rule must be lower */
 }
 
 .subscription-btn {
-  width: 200px;
-  height: 50px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 0;
 }
 
@@ -911,9 +914,6 @@ this rule must be lower */
 
 .order-submit-btn {
   align-self: center;
-  min-width: 200px;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 /* ---------------------- Portfolio page styles ---------------------- */
