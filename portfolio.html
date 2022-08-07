@@ -325,7 +325,7 @@
             </address>
           </div>
           <div class="footer-invitation">
-            <h2 class="footer-invitation-title">Приєднуйтесь</h2>
+            <h2 class="footer-block-title">Приєднуйтесь</h2>
             <ul class="footer-invitation-social-list list">
               <li class="footer-invitation-social-item">
                 <a href="" class="footer-invitation-social-link" aria-label="Instagram">
@@ -361,10 +361,18 @@
               </li>
             </ul>
           </div>
-          <div class="subscription">
-            <h2 class="subscription-title">Підпишіться на розсилку</h2>
-            <div class="subscription-form">
-              <input class="subscription-field-email" type="text" placeholder="E-mail" />
+          <form class="subscription-form">
+            <label class="footer-block-title" for="subscription-email">
+              Підпишіться на розсилку
+            </label>
+            <div class="subscription-wrap">
+              <input
+                class="subscription-field-email"
+                type="email"
+                name="subscription-email"
+                id="subscription-email"
+                placeholder="E-mail"
+              />
               <button class="subscription-btn common-blue-btn" type="submit">
                 Підписатися
                 <svg class="subscription-btn-icon" width="24" height="24">
@@ -372,7 +380,7 @@
                 </svg>
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
