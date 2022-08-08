@@ -527,8 +527,6 @@ img {
 
 .footer-wrap {
   display: flex;
-  /* TODO: */
-  /* gap: 93px; */
   align-items: baseline;
 }
 
@@ -548,6 +546,7 @@ img {
 /* ---------- Footer address ---------- */
 
 .footer-block-address {
+  flex-grow: 1;
   margin-right: 70px;
 }
 
