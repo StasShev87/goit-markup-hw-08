@@ -527,7 +527,8 @@ img {
 
 .footer-wrap {
   display: flex;
-  gap: 93px;
+  /* TODO: */
+  /* gap: 93px; */
   align-items: baseline;
 }
 
@@ -545,6 +546,10 @@ img {
 }
 
 /* ---------- Footer address ---------- */
+
+.footer-block-address {
+  margin-right: 70px;
+}
 
 .footer-logo {
   display: block;
@@ -581,6 +586,10 @@ this rule must be lower */
 }
 
 /* ---------- Footer invitation ---------- */
+
+.footer-block-invitation {
+  margin-right: 93px;
+}
 
 .footer-invitation-social-list {
   display: flex;
