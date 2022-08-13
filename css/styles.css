@@ -888,12 +888,18 @@ this rule must be lower */
 /* Checkbox checked */
 .order-checkbox-field-input:checked + .checkbox-custom {
   background-color: var(--accent-color);
-  box-shadow: inset 0px 0px 0px 0px var(--title-color);
+  box-shadow: inset 0px 0px 0px 2px var(--accent-color);
 }
 
 /* Checkbox focused */
 .order-checkbox-field-input:focus + .checkbox-custom {
-  outline: var(--title-color) solid 2px;
+  /* outline: var(--title-color) solid 2px; */
+  box-shadow: inset 0px 0px 0px 2px var(--accent-color);
+}
+
+/* Checkbox checked focused */
+.order-checkbox-field-input:checked:focus + .checkbox-custom {
+  box-shadow: inset 0px 0px 0px 2px var(--title-color);
 }
 
 /* End checkbox customization */
