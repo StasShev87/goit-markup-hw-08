@@ -18,26 +18,28 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
+      <div class="header__container container">
         <!--Logo-->
-        <a class="header-logo logo link" href="./index.html">
-          Web<span class="logo-dark">Studio</span>
+        <a class="header__logo logo link" href="./index.html">
+          Web<span class="logo__dark">Studio</span>
         </a>
         <!--Navigation-->
         <nav class="site-nav">
-          <ul class="site-nav-list list">
-            <li class="site-nav-item">
-              <a class="site-nav-link link" href="./index.html">Студія</a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="./index.html">Студія</a>
             </li>
-            <li class="site-nav-item">
-              <a class="site-nav-link link current" href="./portfolio.html">Портфоліо</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link link site-nav__link--current" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
-            <li class="site-nav-item"><a class="site-nav-link link" href="">Контакти</a></li>
+            <li class="site-nav__item"><a class="site-nav__link link" href="">Контакти</a></li>
           </ul>
         </nav>
         <!--Contacts-->
         <ul class="header-contacts list">
-          <li class="header-contacts-item">
+          <li class="header-contacts__item">
             <a class="header-contacts__link link" href="mailto:info@devstudio.com">
               <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
@@ -45,7 +47,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header-contacts-item">
+          <li class="header-contacts__item">
             <a class="header-contacts__link link" href="tel:+380991111111">
               <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
@@ -302,7 +304,7 @@
           <div class="footer__block-address">
             <!--Logo-->
             <a class="footer__logo logo link" href="./index.html">
-              Web<span class="logo-light">Studio</span>
+              Web<span class="logo__light">Studio</span>
             </a>
             <address class="footer__address">
               <ul class="list">
@@ -331,9 +333,9 @@
           </div>
           <div class="footer__block-invitation">
             <h2 class="footer__block-title">Приєднуйтесь</h2>
-            <ul class="footer__social list">
+            <ul class="social list">
               <li class="social__item">
-                <a href="" class="social-link--dark" aria-label="Instagram">
+                <a href="" class="social-link social-link--dark" aria-label="Instagram">
                   <span class="visually-hidden">Instagram</span>
                   <svg class="social-link__icon" width="20" height="20">
                     <use href="./images/icons.svg#social-instagram"></use>
@@ -341,7 +343,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a href="" class="social-link--dark" aria-label="Twitter">
+                <a href="" class="social-link social-link--dark" aria-label="Twitter">
                   <span class="visually-hidden">Twitter</span>
                   <svg class="social-link__icon" width="20" height="20">
                     <use href="./images/icons.svg#social-twitter"></use>
@@ -349,7 +351,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a href="" class="social-link--dark" aria-label="Facebook">
+                <a href="" class="social-link social-link--dark" aria-label="Facebook">
                   <span class="visually-hidden">Facebook</span>
                   <svg class="social-link__icon" width="20" height="20">
                     <use href="./images/icons.svg#social-facebook"></use>
@@ -357,7 +359,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a href="" class="social-link--dark" aria-label="Linked in">
+                <a href="" class="social-link social-link--dark" aria-label="Linked in">
                   <span class="visually-hidden">Linked in</span>
                   <svg class="social-link__icon" width="20" height="20">
                     <use href="./images/icons.svg#social-linkedin"></use>
@@ -378,7 +380,7 @@
                 id="subscription-email"
                 placeholder="E-mail"
               />
-              <button class="subscription-btn common-blue-btn" type="submit">
+              <button class="common-blue-btn common-blue-btn--no-padding" type="submit">
                 Підписатися
                 <svg class="common-blue-btn__icon" width="24" height="24">
                   <use href="./images/icons.svg#form-send"></use>
