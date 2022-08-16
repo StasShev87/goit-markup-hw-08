@@ -1,0 +1,109 @@
+/* ---------------------- Footer styles ---------------------- */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-background-color);
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__block-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--title-inverse-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* ---------- Footer address ---------- */
+
+.footer__block-address {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__address {
+  font-style: normal;
+  /* font-weight: 400; taken from browser <a> */
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer__address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__address-link {
+  color: var(--footer-contacts-color);
+
+  transition: color var(--main-transition-duration) var(--main-transition-timing-function);
+}
+
+.footer__address-link:hover,
+.footer__address-link:focus {
+  color: var(--accent-color);
+}
+
+.footer__address-link--physical {
+  color: var(--title-inverse-color);
+}
+
+/* ---------- Footer invitation ---------- */
+
+.footer__block-invitation {
+  margin-right: 93px;
+}
+
+/* ---------- Footer subsribtion form ---------- */
+
+.subscription-form__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-form__field-email {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--title-inverse-color);
+
+  background-color: var(--footer-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscription-form__field-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.common-blue-btn--no-padding {
+  padding: 0 0;
+}
+
+.common-blue-btn__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}

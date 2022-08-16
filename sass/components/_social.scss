@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  gap: var(--social-list-gap);
+}
+
+.social__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  color: var(--team-section-social-color);
+
+  border-radius: 50%;
+
+  transition: color var(--main-transition-duration) var(--main-transition-timing-function),
+    background-color var(--main-transition-duration) var(--main-transition-timing-function);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--title-inverse-color);
+  background-color: var(--accent-color);
+}
+
+.social-link__icon {
+  display: block;
+  fill: currentColor;
+}
+
+.social-link--dark {
+  color: var(--title-inverse-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
