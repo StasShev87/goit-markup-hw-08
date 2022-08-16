@@ -34,3 +34,12 @@
 .common-blue-btn:active {
   background-color: var(--accent-color);
 }
+
+.common-blue-btn__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.common-blue-btn--no-padding {
+  padding: 0 0;
+}
