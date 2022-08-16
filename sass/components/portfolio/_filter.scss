@@ -28,10 +28,13 @@
   transition: color var(--main-transition-duration) var(--main-transition-timing-function),
     background-color var(--main-transition-duration) var(--main-transition-timing-function),
     box-shadow var(--main-transition-duration) var(--main-transition-timing-function);
+
+  &:hover,
+  &:focus {
+    @extend .filter__item-button--current;
+  }
 }
 
-.filter__item-button:hover,
-.filter__item-button:focus,
 .filter__item-button--current {
   color: var(--title-inverse-color);
 

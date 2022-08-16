@@ -24,15 +24,15 @@
   cursor: pointer;
   transition: background-color var(--main-transition-duration)
     var(--main-transition-timing-function);
-}
 
-.common-blue-btn:hover,
-.common-blue-btn:focus {
-  background-color: var(--secondary-accent-color);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-accent-color);
+  }
 
-.common-blue-btn:active {
-  background-color: var(--accent-color);
+  &:active {
+    background-color: var(--accent-color);
+  }
 }
 
 .common-blue-btn__icon {

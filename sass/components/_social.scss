@@ -21,12 +21,12 @@
 
   transition: color var(--main-transition-duration) var(--main-transition-timing-function),
     background-color var(--main-transition-duration) var(--main-transition-timing-function);
-}
 
-.social-link:hover,
-.social-link:focus {
-  color: var(--title-inverse-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--title-inverse-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .social-link__icon {

@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+}

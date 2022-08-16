@@ -24,12 +24,12 @@
 
   transition: color var(--main-transition-duration) var(--main-transition-timing-function),
     border-color var(--main-transition-duration) var(--main-transition-timing-function);
-}
 
-.customers__link:hover,
-.customers__link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 .customers__icon {
