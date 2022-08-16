@@ -1,3 +1,11 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Color palette */
 /* header backgroupnd  #fff */
 /* Hero background #2F303A */
@@ -11,6 +19,7 @@
 /* Hero text color #fff */
 /* Footer contacts color rgba(255, 255, 255, 0.6) */
 :root {
+  --main-font-family: "Roboto", sans-serif;
   --main-background-color: #fff;
   --main-text-color: #757575;
   --logo-dark-color: #000;
@@ -1060,7 +1069,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font-family);
   color: var(--main-text-color);
   background-color: var(--main-background-color);
 }
@@ -1081,12 +1090,4 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }/*# sourceMappingURL=main.css.map */

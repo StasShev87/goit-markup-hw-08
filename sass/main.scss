@@ -1,3 +1,6 @@
+// Base
+@import './base/container';
+
 // Utils
 @import './utils/variables';
 @import './components/visually-hidden';
@@ -27,7 +30,7 @@
 body {
   margin: 0;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font-family);
   color: var(--main-text-color);
   background-color: var(--main-background-color);
 }
@@ -50,12 +53,4 @@ img {
   margin-bottom: 0;
 
   list-style: none;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
