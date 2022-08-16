@@ -1,0 +1,40 @@
+/* Color palette */
+/* header backgroupnd  #fff */
+/* Hero background #2F303A */
+/* What we do background #E5E5E5 */
+/* Out team background #F5F4FA */
+/* Footer background #2F303A */
+
+/* Accent color #2196F3 */
+/* logo color #000 */
+/* Header nav link color #212121 */
+/* Header contacts color #757575 */
+/* Hero text color #fff */
+/* Footer contacts color rgba(255, 255, 255, 0.6) */
+
+:root {
+  --main-background-color: #fff;
+  --main-text-color: #757575;
+  --logo-dark-color: #000;
+  --logo-light-color: #fff;
+  --accent-color: #2196f3;
+  --secondary-accent-color: #188ce8;
+  --title-color: #212121;
+  --title-inverse-color: #fff;
+  --team-section-background-color: #f5f4fa;
+  --team-section-social-color: #afb1b8;
+  --footer-background-color: #2f303a;
+  --footer-contacts-color: rgb(255 255 255 / 0.6);
+  --modal-btn-close-color: #000;
+
+  --team-list-gap: 30px;
+  --team__items-row-count: 4;
+  --social-list-gap: 10px;
+  --social-list-row-items-count: 4;
+  --customers-list-gap: 30px;
+  --customers-list-row-items-count: 6;
+  --examples-list__item-margin: 30px;
+
+  --main-transition-duration: 250ms;
+  --main-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
