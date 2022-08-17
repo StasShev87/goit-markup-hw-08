@@ -1,7 +1,7 @@
-@import './common';
-
 // Base
+@import './base/common';
 @import './base/container';
+@import './base/section';
 
 // Utils
 @import './utils/variables';
@@ -9,9 +9,8 @@
 
 // Components
 @import './components/button';
-@import './components/section';
 @import './components/logo';
-@import './components/social';
+@import './components/socials';
 
 // Sections
 @import './components/header';

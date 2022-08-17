@@ -3,6 +3,14 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &--no-top-padding {
+    padding-top: 0;
+  }
+
+  &--team-bg {
+    background-color: var(--team-section-background-color);
+  }
 }
 
 .section__title {
@@ -15,12 +23,4 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.section--no-top-padding {
-  padding-top: 0;
-}
-
-.section--team {
-  background-color: var(--team-section-background-color);
 }
