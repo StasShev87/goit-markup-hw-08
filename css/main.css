@@ -331,7 +331,7 @@ ul {
           align-items: baseline;
 }
 
-.footer__block-title {
+.subscription-form__title, .footer-invitation__title {
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
@@ -344,44 +344,44 @@ ul {
 }
 
 /* ---------- Footer address ---------- */
-.footer__block-address {
+.footer-address {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 70px;
 }
 
-.footer__logo {
+.footer-address__logo {
   display: block;
   margin-bottom: 20px;
 }
 
-.footer__address {
+.footer-address__address {
   font-style: normal;
   /* font-weight: 400; taken from browser <a> */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer__address:not(:last-child) {
+.footer-address__address:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer__address-link {
+.footer-address__link {
   color: var(--footer-contacts-color);
   -webkit-transition: color var(--main-transition-duration) var(--main-transition-timing-function);
   transition: color var(--main-transition-duration) var(--main-transition-timing-function);
 }
-.footer__address-link:hover, .footer__address-link:focus {
+.footer-address__link:hover, .footer-address__link:focus {
   color: var(--accent-color);
 }
 
-.footer__address-link--physical {
+.footer-address__link--physical {
   color: var(--title-inverse-color);
 }
 
 /* ---------- Footer invitation ---------- */
-.footer__block-invitation {
+.footer-invitation {
   margin-right: 93px;
 }
 
