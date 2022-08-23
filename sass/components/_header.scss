@@ -5,8 +5,8 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .header__logo {
@@ -22,7 +22,7 @@
 }
 
 .site-nav__list {
-  display: flex;
+  // display: flex;
 }
 
 .site-nav__item:not(:last-child) {
@@ -70,17 +70,17 @@
 /* Header contacts styles */
 
 .header-contacts {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
 }
 
 .header-contacts__item:not(:last-child) {
-  margin-right: 50px;
+  // margin-right: 50px;
 }
 
 .header-contacts__link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   color: var(--main-text-color);
   font-weight: 500;
