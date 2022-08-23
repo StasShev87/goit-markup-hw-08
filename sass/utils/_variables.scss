@@ -40,3 +40,8 @@
   --main-transition-duration: 250ms;
   --main-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// Adaptive layout
+$mobileScreenWidth: 480px;
+$tabletScreenWidth: 768px;
+$desktopScreenWidth: 1600px;
