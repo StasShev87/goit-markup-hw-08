@@ -273,6 +273,36 @@ ul {
   fill: currentColor;
 }
 
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  color: var(--title-color);
+  background-color: transparent;
+  border-width: 0;
+  -webkit-transition: color var(--main-transition-duration) var(--main-transition-timing-function);
+  transition: color var(--main-transition-duration) var(--main-transition-timing-function);
+}
+.menu-btn:hover, .menu-btn:focus {
+  color: var(--accent-color);
+}
+.menu-btn:active {
+  color: var(--title-color);
+}
+
+.menu-btn__icon {
+  fill: currentColor;
+}
+
 /* ---------------------- Footer styles ---------------------- */
 .footer {
   padding-top: 60px;
