@@ -90,7 +90,7 @@ ul {
 }
 @media screen and (min-width: 1600px) {
   .container {
-    width: 1400px;
+    width: 1200px;
     max-width: none;
   }
 }
@@ -100,16 +100,24 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .section--no-top-padding {
   padding-top: 0;
 }
 .section--team-bg {
   background-color: var(--team-section-background-color);
 }
+.section--shown-on-desktop-only {
+  display: none;
+}
 @media screen and (min-width: 1600px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .section--shown-on-desktop-only {
+    display: block;
   }
 }
 
@@ -708,6 +716,16 @@ ul {
 }
 
 /* ---------------------- What we do section styles ---------------------- */
+.what-we-do-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.what-we-do-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .what-we-do-list__item {
   position: relative;
 }
