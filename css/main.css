@@ -271,14 +271,18 @@ ul {
             flex-direction: column;
     padding: 48px 40px;
     background-color: var(--main-background-color);
-    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     visibility: hidden;
     pointer-events: none;
-    -webkit-transition: opacity var(--main-transition-duration) var(--main-transition-timing-function), visibility var(--main-transition-duration) var(--main-transition-timing-function);
-    transition: opacity var(--main-transition-duration) var(--main-transition-timing-function), visibility var(--main-transition-duration) var(--main-transition-timing-function);
+    -webkit-transition: visibility var(--main-transition-duration) var(--main-transition-timing-function), -webkit-transform var(--main-transition-duration) var(--main-transition-timing-function);
+    transition: visibility var(--main-transition-duration) var(--main-transition-timing-function), -webkit-transform var(--main-transition-duration) var(--main-transition-timing-function);
+    transition: transform var(--main-transition-duration) var(--main-transition-timing-function), visibility var(--main-transition-duration) var(--main-transition-timing-function);
+    transition: transform var(--main-transition-duration) var(--main-transition-timing-function), visibility var(--main-transition-duration) var(--main-transition-timing-function), -webkit-transform var(--main-transition-duration) var(--main-transition-timing-function);
   }
   .menu-container.is-open {
-    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     visibility: visible;
     pointer-events: auto;
   }

@@ -41,14 +41,14 @@
 
     background-color: var(--main-background-color);
     //   hidden by default
-    opacity: 0;
+    transform: translateX(100%);
     visibility: hidden;
     pointer-events: none;
-    transition: opacity var(--main-transition-duration) var(--main-transition-timing-function),
+    transition: transform var(--main-transition-duration) var(--main-transition-timing-function),
       visibility var(--main-transition-duration) var(--main-transition-timing-function);
 
     &.is-open {
-      opacity: 1;
+      transform: translateX(0);
       visibility: visible;
       pointer-events: auto;
     }
