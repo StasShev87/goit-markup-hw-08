@@ -23,6 +23,10 @@
   &:active {
     color: var(--title-color);
   }
+
+  @media screen and (min-width: $tabletScreenWidth) {
+    display: none;
+  }
 }
 
 .menu-btn__icon {

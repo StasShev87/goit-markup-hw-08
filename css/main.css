@@ -30,10 +30,6 @@ ul {
 }
 
 /* ---------------------- Section styles ---------------------- */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .section--no-top-padding {
   padding-top: 0;
 }
@@ -228,6 +224,11 @@ ul {
 .menu-btn:active {
   color: var(--title-color);
 }
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
 
 .menu-btn__icon {
   fill: currentColor;
@@ -244,13 +245,14 @@ ul {
   padding-bottom: 25px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 48px 40px;
     background-color: var(--main-background-color);
     opacity: 0;
     visibility: hidden;
@@ -264,6 +266,16 @@ ul {
     pointer-events: auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .menu-container__menu-btn {
   position: absolute;
@@ -272,18 +284,8 @@ ul {
 }
 
 /* Site navigation styles */
-.site-nav {
-  margin-left: 93px;
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .site-nav__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -332,8 +334,6 @@ ul {
 
 /* ---------------------- Footer styles ---------------------- */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--footer-background-color);
 }
 
