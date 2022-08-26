@@ -15,6 +15,36 @@
   padding-bottom: 25px;
 }
 
+.menu-container {
+  @media screen and (max-width: $tabletScreenWidth) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--main-background-color);
+    //   hidden by default
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--main-transition-duration) var(--main-transition-timing-function),
+      visibility var(--main-transition-duration) var(--main-transition-timing-function);
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+}
+
+.menu-container__menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
 /* Site navigation styles */
 
 .site-nav {
