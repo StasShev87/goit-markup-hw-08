@@ -16,6 +16,9 @@
 }
 
 .menu-container {
+  display: flex;
+
+  // Mobile menu style
   @media screen and (max-width: $tabletScreenWidth - 1px) {
     position: fixed;
     top: 0;
@@ -23,6 +26,7 @@
     width: 100%;
     height: 100%;
 
+    flex-direction: column;
     padding: 48px 40px;
 
     background-color: var(--main-background-color);
@@ -54,16 +58,17 @@
 
 /* Site navigation styles */
 
-.site-nav {
-  // margin-left: 93px;
-}
-
 .site-nav__list {
-  // display: flex;
+  @media screen and (min-width: $tabletScreenWidth) {
+    display: flex;
+  }
 }
 
 .site-nav__item:not(:last-child) {
-  // margin-right: 50px;
+  margin-bottom: 32px;
+  @media screen and (min-width: $tabletScreenWidth) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
@@ -73,8 +78,8 @@
 
   color: var(--title-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
 
   transition: color var(--main-transition-duration) var(--main-transition-timing-function);
@@ -83,47 +88,70 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: $tabletScreenWidth) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .site-nav__link--current {
-  position: relative;
   color: var(--accent-color);
 
-  &::after {
-    content: '';
+  @media screen and (min-width: $tabletScreenWidth) {
+    position: relative;
 
-    position: absolute;
-    bottom: -1px;
+    &::after {
+      content: '';
 
-    display: block;
-    width: 100%;
-    height: 4px;
+      position: absolute;
+      bottom: -1px;
 
-    background-color: var(--accent-color);
-    border-radius: 2px;
+      display: block;
+      width: 100%;
+      height: 4px;
+
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
   }
 }
 
 /* Header contacts styles */
 
 .header-contacts {
-  // display: flex;
-  // margin-left: auto;
+  display: flex;
+
+  // Mobile menu style
+  @media screen and (max-width: $tabletScreenWidth - 1px) {
+    flex-direction: column-reverse;
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
+}
+
+.header-contacts__item:not(:first-child) {
+  // Mobile menu style
+  @media screen and (max-width: $tabletScreenWidth - 1px) {
+    margin-bottom: 32px;
+  }
 }
 
 .header-contacts__item:not(:last-child) {
-  // margin-right: 50px;
+  @media screen and (min-width: $tabletScreenWidth) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desktopScreenWidth) {
+    margin-right: 50px;
+  }
 }
 
 .header-contacts__link {
-  // display: flex;
-  // align-items: center;
-
-  color: var(--main-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.02em;
+  color: var(--main-text-color);
 
   transition: color var(--main-transition-duration) var(--main-transition-timing-function);
 
@@ -131,9 +159,71 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: $tabletScreenWidth) {
+    // display: flex;
+    // align-items: center;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.header-contacts__link--accent {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--main-text-color);
+  }
 }
 
 .header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+
+  // Mobile menu style
+  @media screen and (max-width: $tabletScreenWidth - 1px) {
+    display: none;
+  }
+}
+
+/* Header socials styles */
+.menu-socials {
+  display: flex;
+
+  @media screen and (min-width: $tabletScreenWidth) {
+    display: none;
+  }
+}
+
+.menu-socials__item {
+  display: flex;
+}
+
+.menu-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-socials__item:not(:last-child)::after {
+  content: '';
+
+  display: block;
+  width: 1px;
+  height: 100%;
+  margin-left: 10px;
+
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }

@@ -100,7 +100,6 @@ ul {
 
 .button {
   height: 50px;
-  min-width: 200px;
   max-width: 100%;
   padding: 0 32px;
   overflow: hidden;
@@ -245,6 +244,11 @@ ul {
   padding-bottom: 25px;
 }
 
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
@@ -252,6 +256,10 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 48px 40px;
     background-color: var(--main-background-color);
     opacity: 0;
@@ -284,12 +292,29 @@ ul {
 }
 
 /* Site navigation styles */
+@media screen and (min-width: 768px) {
+  .site-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .site-nav__link {
   display: block;
   color: var(--title-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--main-transition-duration) var(--main-transition-timing-function);
   transition: color var(--main-transition-duration) var(--main-transition-timing-function);
@@ -297,39 +322,143 @@ ul {
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .site-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .site-nav__link--current {
-  position: relative;
   color: var(--accent-color);
 }
-.site-nav__link--current::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+@media screen and (min-width: 768px) {
+  .site-nav__link--current {
+    position: relative;
+  }
+  .site-nav__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 /* Header contacts styles */
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-contacts__item:not(:first-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .header-contacts__link {
-  color: var(--main-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.02em;
+  color: var(--main-text-color);
   -webkit-transition: color var(--main-transition-duration) var(--main-transition-timing-function);
   transition: color var(--main-transition-duration) var(--main-transition-timing-function);
 }
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.header-contacts__link--accent {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.header-contacts__link--accent:hover, .header-contacts__link--accent:focus {
+  color: var(--main-text-color);
+}
 
 .header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (max-width: 767px) {
+  .header-contacts__icon {
+    display: none;
+  }
+}
+
+/* Header socials styles */
+.menu-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .menu-socials {
+    display: none;
+  }
+}
+
+.menu-socials__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-socials__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  margin-left: 10px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 /* ---------------------- Footer styles ---------------------- */
@@ -380,16 +509,9 @@ ul {
 }
 
 /* ---------- Footer invitation ---------- */
-.footer-invitation {
-  margin-right: 93px;
-}
-
 /* ---------- Footer subsribtion form ---------- */
 .subscription-form__field-email {
-  width: 358px;
   height: 50px;
-  padding: 15px 16px;
-  margin-right: 12px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -532,10 +654,6 @@ ul {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team__box {
-  padding: 30px 32px;
-}
-
 .team__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -619,11 +737,8 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
   height: 581px;
-  min-width: 500px;
   min-height: 520px;
-  padding: 40px;
   background-color: var(--main-background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -884,12 +999,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter__item-button {
-  padding: 6px 22px;
   color: var(--title-color);
   font-family: inherit;
   font-weight: 500;
@@ -936,7 +1046,6 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translatey(100%);
           transform: translatey(100%);
@@ -958,7 +1067,6 @@ ul {
 }
 
 .examples-list__item-footer {
-  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
