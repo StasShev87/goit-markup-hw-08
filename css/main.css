@@ -1,51 +1,3 @@
-body {
-  margin: 0;
-  font-family: var(--main-font-family);
-  color: var(--main-text-color);
-  background-color: var(--main-background-color);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ---------------------- Section styles ---------------------- */
-.section--no-top-padding {
-  padding-top: 0;
-}
-.section--team-bg {
-  background-color: var(--team-section-background-color);
-}
-
-.section__title {
-  color: var(--title-color);
-  /* font-weight: 700;  taken from browser <h2> */
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 /* Color palette */
 /* header backgroupnd  #fff */
 /* Hero background #2F303A */
@@ -96,6 +48,68 @@ ul {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.container {
+  width: auto;
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+    max-width: none;
+  }
+}
+
+/* ---------------------- Section styles ---------------------- */
+.section--no-top-padding {
+  padding-top: 0;
+}
+.section--team-bg {
+  background-color: var(--team-section-background-color);
+}
+
+.section__title {
+  color: var(--title-color);
+  /* font-weight: 700;  taken from browser <h2> */
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .button {

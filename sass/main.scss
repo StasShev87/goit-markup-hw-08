@@ -1,11 +1,11 @@
+// Utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+
 // Base
 @import './base/common';
 @import './base/container';
 @import './base/section';
-
-// Utils
-@import './utils/variables';
-@import './utils/visually-hidden';
 
 // Components
 @import './components/button';
