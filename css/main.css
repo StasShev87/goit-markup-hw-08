@@ -96,20 +96,40 @@ ul {
 }
 
 /* ---------------------- Section styles ---------------------- */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .section--no-top-padding {
   padding-top: 0;
 }
 .section--team-bg {
   background-color: var(--team-section-background-color);
 }
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section__title {
-  color: var(--title-color);
+  margin-top: 0;
+  margin-bottom: 30px;
   /* font-weight: 700;  taken from browser <h2> */
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18x;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+@media screen and (min-width: 1600px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .button {
