@@ -233,6 +233,33 @@ ul {
   fill: currentColor;
 }
 
+@media screen and (max-width: 768px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-background-color);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: opacity var(--main-transition-duration) var(--main-transition-timing-function), visibility var(--main-transition-duration) var(--main-transition-timing-function);
+    transition: opacity var(--main-transition-duration) var(--main-transition-timing-function), visibility var(--main-transition-duration) var(--main-transition-timing-function);
+  }
+  .menu-container.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.menu-container__menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
 /* ---------------------- Header styles ---------------------- */
 .header {
   border-bottom: 1px solid #ececec;
