@@ -3,7 +3,7 @@
 .features {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: var(--cards-list-gap);
 
   @media screen and (min-width: $tabletScreenWidth) {
     flex-direction: row;
@@ -13,11 +13,11 @@
 
 .features__item {
   @media screen and (min-width: $tabletScreenWidth) {
-    flex-basis: calc((100% - 1 * 30px) / 2);
+    flex-basis: calc((100% - 1 * var(--cards-list-gap)) / 2);
   }
 
   @media screen and (min-width: $desktopScreenWidth) {
-    flex-basis: calc((100% - 3 * 30px) / 4);
+    flex-basis: calc((100% - 3 * var(--cards-list-gap)) / 4);
   }
 }
 
@@ -41,10 +41,13 @@
   /* font-weight: 700;  taken from browser <h3> */
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+
+  @media screen and (max-width: calc($tabletScreenWidth - 1px)) {
+    text-align: center;
+  }
 }
 
 .feature__description {
