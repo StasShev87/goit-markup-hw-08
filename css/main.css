@@ -844,12 +844,30 @@ ul {
 
 /* ---------------------- Customers section styles ---------------------- */
 .customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: var(--cards-list-gap);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .customers__item {
-  width: 170px;
+  -ms-flex-preferred-size: calc((100% - 1 * var(--cards-list-gap)) / 2);
+      flex-basis: calc((100% - 1 * var(--cards-list-gap)) / 2);
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .customers__item {
+    -ms-flex-preferred-size: calc((100% - 2 * var(--cards-list-gap)) / 3);
+        flex-basis: calc((100% - 2 * var(--cards-list-gap)) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    -ms-flex-preferred-size: calc((100% - 5 * var(--cards-list-gap)) / 6);
+        flex-basis: calc((100% - 5 * var(--cards-list-gap)) / 6);
+  }
 }
 
 .customers__link {

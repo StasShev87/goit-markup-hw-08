@@ -1,13 +1,22 @@
 /* ---------------------- Customers section styles ---------------------- */
 
 .customers {
-  // display: flex;
+  display: flex;
   gap: var(--cards-list-gap);
+  flex-wrap: wrap;
 }
 
 .customers__item {
-  width: 170px;
+  flex-basis: calc((100% - 1 * var(--cards-list-gap)) / 2);
   height: 92px;
+
+  @media screen and (min-width: $tabletScreenWidth) {
+    flex-basis: calc((100% - 2 * var(--cards-list-gap)) / 3);
+  }
+
+  @media screen and (min-width: $desktopScreenWidth) {
+    flex-basis: calc((100% - 5 * var(--cards-list-gap)) / 6);
+  }
 }
 
 .customers__link {
