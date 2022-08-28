@@ -138,8 +138,9 @@ ul {
 
 .button {
   height: 50px;
+  min-width: 200px;
   max-width: 100%;
-  padding: 0 32px;
+  padding: 0 24px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,6 +165,11 @@ ul {
   cursor: pointer;
   -webkit-transition: background-color var(--main-transition-duration) var(--main-transition-timing-function);
   transition: background-color var(--main-transition-duration) var(--main-transition-timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 0 32px;
+  }
 }
 .button:hover, .button:focus {
   background-color: var(--secondary-accent-color);
@@ -537,7 +543,39 @@ ul {
 
 /* ---------------------- Footer styles ---------------------- */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-background-color);
+}
+
+.footer__wrap {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    text-align: start;
+  }
 }
 
 .subscription-form__title, .footer-invitation__title {
@@ -553,6 +591,26 @@ ul {
 }
 
 /* ---------- Footer address ---------- */
+@media screen and (min-width: 768px) {
+  .footer-address {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 70px;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-address {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-address__logo {
   display: block;
   margin-bottom: 20px;
@@ -560,16 +618,22 @@ ul {
 
 .footer-address__address {
   font-style: normal;
+}
+
+.footer-address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-address__link {
   /* font-weight: 400; taken from browser <a> */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.footer-address__address:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-address__link {
   color: var(--footer-contacts-color);
   -webkit-transition: color var(--main-transition-duration) var(--main-transition-timing-function);
   transition: color var(--main-transition-duration) var(--main-transition-timing-function);
@@ -583,9 +647,33 @@ ul {
 }
 
 /* ---------- Footer invitation ---------- */
+@media screen and (max-width: 1199px) {
+  .footer-invitation {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-invitation {
+    margin-right: 93px;
+  }
+}
+
 /* ---------- Footer subsribtion form ---------- */
+@media screen and (min-width: 1200px) {
+  .subscription-form__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .subscription-form__field-email {
+  width: 100%;
   height: 50px;
+  padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -595,6 +683,22 @@ ul {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 480px) {
+  .subscription-form__field-email {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .subscription-form__field-email {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form__field-email {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 .subscription-form__field-email::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -610,6 +714,13 @@ ul {
 }
 .subscription-form__field-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscription-form__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ---------------------- Hero styles ---------------------- */
