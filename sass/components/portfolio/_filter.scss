@@ -1,17 +1,26 @@
 /* Filter styles */
 
 .filter {
-  // display: flex;
-  // justify-content: center;
-  margin-bottom: 50px;
-}
+  display: flex;
+  flex-wrap: wrap;
 
-.filter__item:not(:last-child) {
-  // margin-right: 8px;
+  column-gap: 8px;
+  row-gap: 15px;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tabletScreenWidth) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktopScreenWidth) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item-button {
-  // padding: 6px 22px;
+  padding: 6px 22px;
 
   color: var(--title-color);
   font-family: inherit;
