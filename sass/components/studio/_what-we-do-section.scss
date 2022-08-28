@@ -5,7 +5,7 @@
 }
 
 .what-we-do-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--cards-list-gap);
 }
 
 .what-we-do-list__item {
