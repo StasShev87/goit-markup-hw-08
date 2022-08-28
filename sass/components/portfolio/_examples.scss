@@ -3,14 +3,14 @@
 .examples-list {
   // display: flex;
   // flex-wrap: wrap;
-  // margin-left: calc(-1 * var(--examples-list__item-margin));
-  // margin-top: calc(-1 * var(--examples-list__item-margin));
+  // margin-left: calc(-1 * var(--cards-list-gap));
+  // margin-top: calc(-1 * var(--cards-list-gap));
 }
 
 .examples-list__item {
-  // margin-left: var(--examples-list__item-margin);
-  // margin-top: var(--examples-list__item-margin);
-  // flex-basis: calc(100% / 3 - var(--examples-list__item-margin));
+  // margin-left: var(--cards-list-gap);
+  // margin-top: var(--cards-list-gap);
+  // flex-basis: calc(100% / 3 - var(--cards-list-gap));
 }
 
 .examples-list__item-link {
