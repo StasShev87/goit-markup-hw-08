@@ -3,7 +3,7 @@
 .team {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: var(--cards-list-gap);
 
   @media screen and (min-width: $tabletScreenWidth) {
     flex-direction: row;
@@ -13,11 +13,11 @@
 
 .team__item {
   @media screen and (min-width: $tabletScreenWidth) {
-    flex-basis: calc((100% - 1 * 30px) / 2);
+    flex-basis: calc((100% - 1 * var(--cards-list-gap)) / 2);
   }
 
   @media screen and (min-width: $desktopScreenWidth) {
-    flex-basis: calc((100% - 3 * 30px) / 4);
+    flex-basis: calc((100% - 3 * var(--cards-list-gap)) / 4);
   }
 
   background-color: var(--main-background-color);
@@ -27,7 +27,12 @@
 }
 
 .team__box {
-  // padding: 30px 32px;
+  padding: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: $desktopScreenWidth) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__title {
