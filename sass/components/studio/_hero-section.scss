@@ -1,7 +1,7 @@
 /* ---------------------- Hero styles ---------------------- */
 
 .hero {
-  max-width: $mobileScreenWidth;
+  max-width: 1600px;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -13,8 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media screen and (min-width: $tabletScreenWidth) {
-    max-width: 1600px;
+  @media screen and (min-width: $desktopScreenWidth) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -32,7 +31,7 @@
   text-transform: uppercase;
   color: var(--title-inverse-color);
 
-  @media screen and (min-width: $tabletScreenWidth) {
+  @media screen and (min-width: $desktopScreenWidth) {
     font-size: 44px;
     line-height: 1.36;
   }
