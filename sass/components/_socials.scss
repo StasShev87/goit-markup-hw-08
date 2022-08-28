@@ -1,6 +1,8 @@
 .socials {
-  // display: flex;
-  // gap: var(--socials-list-gap);
+  display: flex;
+  gap: var(--socials-list-gap);
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .socials__item {
