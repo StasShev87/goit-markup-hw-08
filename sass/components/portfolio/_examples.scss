@@ -1,20 +1,31 @@
 /* Examples styles */
 
 .examples-list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: calc(-1 * var(--cards-list-gap));
-  // margin-top: calc(-1 * var(--cards-list-gap));
+  display: flex;
+  flex-direction: column;
+  gap: var(--cards-list-gap);
+
+  @media screen and (min-width: $tabletScreenWidth) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .examples-list__item {
-  // margin-left: var(--cards-list-gap);
-  // margin-top: var(--cards-list-gap);
-  // flex-basis: calc(100% / 3 - var(--cards-list-gap));
+  @media screen and (min-width: $tabletScreenWidth) {
+    flex-basis: calc((100% - 1 * var(--cards-list-gap)) / 2);
+  }
+
+  @media screen and (min-width: $desktopScreenWidth) {
+    flex-basis: calc((100% - 2 * var(--cards-list-gap)) / 3);
+  }
 }
 
 .examples-list__item-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   transition: box-shadow var(--main-transition-duration) var(--main-transition-timing-function);
 
   &:hover,
@@ -37,11 +48,24 @@
   width: 100%;
   height: 100%;
 
-  // padding: 63px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translatey(100%);
   transition: transform var(--main-transition-duration) var(--main-transition-timing-function);
+
+  @media screen and (max-width: calc($mobileScreenWidth - 1px)) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tabletScreenWidth) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: $desktopScreenWidth) {
+    padding: 63px 24px;
+  }
 
   .examples-list__item-link:hover &,
   .examples-list__item-link:focus & {
@@ -50,7 +74,7 @@
 }
 
 .examples-list__item-overlay-text {
-  // margin: 0;
+  margin: 0;
 
   font-size: 18px;
   line-height: 1.56;
@@ -59,14 +83,15 @@
 }
 
 .examples-list__item-footer {
-  // padding: 20px 24px;
+  flex-grow: 1;
+  padding: 20px 24px;
 
   border: 1px solid #eeeeee;
 }
 
 .examples-list__item-title {
-  // margin-top: 0;
-  // margin-bottom: 4px;
+  margin-top: 0;
+  margin-bottom: 4px;
 
   color: var(--title-color);
   /* font-weight: 700; taken from browser <h2> */
@@ -76,8 +101,8 @@
 }
 
 .examples-list__item-category {
-  // margin-top: 0;
-  // margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
   /* font-weight: 400; taken from browser <p> */
   font-size: 16px;
