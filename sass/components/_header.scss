@@ -224,6 +224,11 @@
       color: var(--main-text-color);
     }
   }
+
+  // Fix for narrow screens
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
+  }
 }
 
 .header-contacts__icon {
@@ -270,4 +275,9 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  // Fix for narrow screens
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+  }
 }

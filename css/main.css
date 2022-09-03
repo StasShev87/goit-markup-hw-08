@@ -540,6 +540,11 @@ ul {
     color: var(--main-text-color);
   }
 }
+@media screen and (max-width: 400px) {
+  .header-contacts__link--accent {
+    font-size: 30px;
+  }
+}
 
 .header-contacts__icon {
   margin-right: 10px;
@@ -588,6 +593,11 @@ ul {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 400px) {
+  .menu-socials__link {
+    font-size: 14px;
+  }
 }
 
 /* ---------------------- Footer styles ---------------------- */
