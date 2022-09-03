@@ -166,10 +166,6 @@
   @media screen and (min-width: $tabletScreenWidth) and (max-width: calc($desktopScreenWidth - 1px)) {
     flex-direction: column;
   }
-
-  @media screen and (min-width: $tabletScreenWidth) {
-    align-items: center;
-  }
 }
 
 .header-contacts__item:not(:first-child) {
