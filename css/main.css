@@ -326,6 +326,7 @@ ul {
 
 .header__menu-btn {
   margin-left: auto;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .header__menu-btn {
@@ -386,6 +387,7 @@ ul {
   position: absolute;
   top: 10px;
   right: 15px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .menu-container__menu-btn {
