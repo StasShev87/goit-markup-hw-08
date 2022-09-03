@@ -359,6 +359,7 @@ ul {
     transition: visibility var(--main-transition-duration) var(--main-transition-timing-function), -webkit-transform var(--main-transition-duration) var(--main-transition-timing-function);
     transition: transform var(--main-transition-duration) var(--main-transition-timing-function), visibility var(--main-transition-duration) var(--main-transition-timing-function);
     transition: transform var(--main-transition-duration) var(--main-transition-timing-function), visibility var(--main-transition-duration) var(--main-transition-timing-function), -webkit-transform var(--main-transition-duration) var(--main-transition-timing-function);
+    z-index: 1;
   }
   .menu-container.is-open {
     -webkit-transform: translateX(0);

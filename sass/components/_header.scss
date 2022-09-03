@@ -56,6 +56,7 @@
     pointer-events: none;
     transition: transform var(--main-transition-duration) var(--main-transition-timing-function),
       visibility var(--main-transition-duration) var(--main-transition-timing-function);
+    z-index: 1;
 
     &.is-open {
       transform: translateX(0);
