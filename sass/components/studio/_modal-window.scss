@@ -72,6 +72,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // Fix for iphone
+  padding: 0;
 
   background-color: var(--main-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -136,6 +138,8 @@
 
 .order-text-field__input-wrap {
   position: relative;
+  // Fix for iphone
+  display: block;
 }
 
 .order-text-field__input {

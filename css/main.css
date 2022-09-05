@@ -1181,6 +1181,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
   background-color: var(--main-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -1240,6 +1241,7 @@ ul {
 
 .order-text-field__input-wrap {
   position: relative;
+  display: block;
 }
 
 .order-text-field__input {
