@@ -624,9 +624,8 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -650,11 +649,6 @@ ul {
 }
 
 /* ---------- Footer address ---------- */
-@media screen and (min-width: 768px) {
-  .footer-address {
-    margin-right: 165px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-address {
     -webkit-box-flex: 1;

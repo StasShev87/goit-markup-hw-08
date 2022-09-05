@@ -17,7 +17,7 @@
   }
 
   @media screen and (min-width: $tabletScreenWidth) and (max-width: calc($desktopScreenWidth - 1px)) {
-    justify-content: center;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: $desktopScreenWidth) {
@@ -42,10 +42,6 @@
 /* ---------- Footer address ---------- */
 
 .footer-address {
-  @media screen and (min-width: $tabletScreenWidth) {
-    margin-right: 165px;
-  }
-
   @media screen and (min-width: $desktopScreenWidth) {
     flex-grow: 1;
     margin-right: 70px;
