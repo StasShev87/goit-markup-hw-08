@@ -11,6 +11,12 @@
     padding: 93px 15px;
   }
 
+  // Fix height screen limit
+  @media screen and (max-height: 690px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
   opacity: 1;
@@ -48,6 +54,16 @@
     transform: translate(-50%, -50%) scale(100%, 100%);
   }
 
+  // Fix height screen limit
+  @media screen and (min-width: $mobileScreenWidth) and (max-height: 690px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(100%, 100%);
+  }
+
   @media screen and (min-width: $desktopScreenWidth) {
     width: 528px;
     height: 581px;
@@ -58,6 +74,11 @@
 
     @media screen and (min-width: $mobileScreenWidth) {
       transform: translate(-50%, -50%) scale(0, 0);
+    }
+
+    // Fix height screen limit
+    @media screen and (min-width: $mobileScreenWidth) and (max-height: 690px) {
+      transform: scale(0, 0);
     }
   }
 }
