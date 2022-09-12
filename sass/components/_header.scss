@@ -86,6 +86,13 @@
 
 /* Site navigation styles */
 
+.site-nav {
+  // Mobile menu style
+  @media screen and (max-width: calc($tabletScreenWidth - 1px)) {
+    margin-bottom: 64px;
+  }
+}
+
 .site-nav__list {
   @media screen and (min-width: $tabletScreenWidth) {
     display: flex;
@@ -129,6 +136,11 @@
 
     font-size: 14px;
     line-height: 1.14;
+  }
+
+  // Fix for narrow screens
+  @media screen and (max-width: 400px) {
+    font-size: 27px;
   }
 }
 
@@ -208,6 +220,11 @@
     font-size: 14px;
     line-height: 1.14;
   }
+
+  // Fix for narrow screens
+  @media screen and (max-width: 400px) {
+    font-size: 16px;
+  }
 }
 
 .header-contacts__link--accent {
@@ -227,7 +244,7 @@
 
   // Fix for narrow screens
   @media screen and (max-width: 400px) {
-    font-size: 30px;
+    font-size: 23px;
   }
 }
 
@@ -278,6 +295,6 @@
 
   // Fix for narrow screens
   @media screen and (max-width: 400px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
