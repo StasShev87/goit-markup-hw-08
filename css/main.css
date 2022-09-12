@@ -355,6 +355,7 @@ ul {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     visibility: hidden;
+    overflow-y: auto;
     pointer-events: none;
     -webkit-transition: visibility var(--main-transition-duration) var(--main-transition-timing-function), -webkit-transform var(--main-transition-duration) var(--main-transition-timing-function);
     transition: visibility var(--main-transition-duration) var(--main-transition-timing-function), -webkit-transform var(--main-transition-duration) var(--main-transition-timing-function);
